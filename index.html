@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Homework 09-10__js</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body class="body">
+
+	<div class="wrap">
+		<div class="container">
+			<div class="rov">
+				<div class="col-12">
+					<div class="js_1-2" id="results">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<script type="text/html" id="item_tmpl">
+		<h1><%= members[0].name %></h1>
+		<div class="my">
+			<img class="my__img" src="<%= members[0].imgUrl %>" alt="моя фотография">
+		</div>
+		<div class="kurs">
+			<p class="kurs__s"><%= members[0].status %></p>
+		</div>
+		<div class="line"></div>
+		<div class="about-person">
+			<h2><%= members[0].aboutPerson %></h2>
+			<ul class="about-person__ul">
+				<% for ( var i = 0; i < aboutPerson.length; i++ ) { %>
+					<li><%= aboutPerson[i].about %></li>
+				<% } %>
+			</ul>
+		</div>
+		<div class="line_2"></div>
+		<div class="about-person">
+			<h2>Мой контактный телефон:</h2>
+			<p class="about-person__p"><%= members[0].phone %></p>
+			<h2>Мой профиль Вконтакте:</h2>
+			<a href="<%= members[0].vkLink %>" class="vk-prof" target="_blank">vk.com</a>
+		</div>
+		<div class="line_2"></div>
+		<div class="about-person">
+			<h2>Мой фидбек:</h2>
+			<p class="about-person__p"><%= members[0].feedback %></p>
+		</div>
+</script>
+
+
+
+
+	<div class="wrapper">
+		<div class="container">
+			<div class="rov">
+				<div class="col-12">
+					<div class="carousel clearfix">
+						<div class="carousel-arrow-left"><span>&laquo;</span></div>
+							<div class="carousel-hider">
+								<ul class="carousel-list clearfix">
+									<li class="carousel-element"><img src="img/image1.jpg"><p>Описание 1</p></li>
+									<li class="carousel-element"><img src="img/image2.jpg"><p>Описание 2</p></li>
+									<li class="carousel-element"><img src="img/image3.jpg"><p>Описание 3</p></li>
+									<li class="carousel-element"><img src="img/image1.jpg"><p>Описание 4</p></li>
+									<li class="carousel-element"><img src="img/image2.jpg"><p>Описание 5</p></li>
+									<li class="carousel-element"><img src="img/image3.jpg"><p>Описание 6</p></li>
+									<li class="carousel-element"><img src="img/image1.jpg"><p>Описание 7</p></li>
+									<li class="carousel-element"><img src="img/image2.jpg"><p>Описание 8</p></li>
+									<li class="carousel-element"><img src="img/image3.jpg"><p>Описание 9</p></li>
+									<li class="carousel-element"><img src="img/image1.jpg"><p>Описание 10</p></li>
+									<li class="carousel-element"><img src="img/image2.jpg"><p>Описание 11</p></li>
+									<li class="carousel-element"><img src="img/image3.jpg"><p>Описание 12</p></li>
+								</ul>
+							</div>
+							<div class="carousel-arrow-right"><span>&raquo;</span></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/script.js"></script>	
+</body>
+</html>
